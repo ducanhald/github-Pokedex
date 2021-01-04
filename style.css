@@ -1,5 +1,5 @@
 h1 {
-    font-size: 2.5rem;
+    font-size: 5rem;
 }
 
 h5 {
@@ -12,9 +12,6 @@ h5 {
     margin-bottom: 0.5rem;
     font-weight: 500;
 }
-
-
-/* ====================================== */
 
 * {
     margin: 0;
@@ -30,14 +27,13 @@ body {
     flex-direction: column;
     align-items: stretch;
     overflow-y: scroll;
-    /*To always have the scrollbar*/
-    background-color: #dfa4a4;
+    background-color: burlywood;
 }
 
 h1 {
     align-self: center;
     margin: 30px 0 15px 0;
-    font-family: Arial, Helvetica, sans-serif, cursive;
+    font-family: 'Lucida Sans';
     text-align: center;
     color: rgb(0, 0, 0, 0.8);
 }
@@ -46,7 +42,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*Both these lines are only useful for the loader*/
     height: 100%;
     align-items: center;
 }
@@ -59,9 +54,7 @@ h1 {
     position: relative;
     height: 385px;
     width: 385px;
-    /* box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5); */
     border-radius: 20px;
-    /* transition: transform 1.5s; */
     transform-style: preserve-3d;
 }
 
@@ -81,37 +74,27 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 10px solid rgb(12, 12, 12);
+    border: 10px solid rgba(102, 79, 2, 0.418);
     backface-visibility: hidden;
 }
 
 .card_back {
     transform: rotateY(0.5turn);
-    background-color: #965f5f;
+    background-color: #615d49;
     color: white;
-    border: 4px solid #464646;
+    border: 4px solid #5f5f5f;
 }
 
 .poke-stats-name {
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
 }
 
 .poke-stats-bar {
     width: 70%;
     height: 8px;
     margin-bottom: 15px;
-    /* border: 1px solid black; */
 }
-
-
-/* ============================ */
-
-
-/* CARD STYLING ENDS HERE */
-
-
-/* =========================== */
 
 .poke-id {
     margin-top: 10px;
@@ -131,68 +114,6 @@ img {
     font-weight: bold;
     text-align: center;
 }
-.loader {
-    position: absolute;
-    top: calc(50% - 32px);
-    left: calc(50% - 32px);
-    margin-top: 400px;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    perspective: 800px;
-}
-.inner {
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-.inner.one {
-    left: 0%;
-    top: 0%;
-    animation: rotate-one 1s linear infinite;
-    border-bottom: 3px solid #EFEFFA;
-}
-.inner.two {
-    right: 0%;
-    top: 0%;
-    animation: rotate-two 1s linear infinite;
-    border-right: 3px solid #EFEFFA;
-}
-.inner.three {
-    right: 0%;
-    bottom: 0%;
-    animation: rotate-three 1s linear infinite;
-    border-top: 3px solid #EFEFFA;
-}
-@keyframes rotate-one {
-    0% {
-        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-    }
-    
-    100% {
-        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-    }
-}
-@keyframes rotate-two {
-    0% {
-        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-    }
-    
-    100% {
-        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-    }
-}
-@keyframes rotate-three {
-    0% {
-        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-    }
-    
-    100% {
-        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-    }
-}
 body {
     position: relative;
 }
@@ -205,12 +126,12 @@ body {
 .search-box {
     width: 100%;
     height: 50px;
-    border: #212529;
+    border: #103152;
     background: transparent;
     outline-style: initial;
     font-size: 35px;
     font-weight: bold;
-    border-bottom: 3px solid rgb(0, 0, 0, 0.9);
+    border: #381414 1px;
     padding-bottom: 5px;
 }
 .fa-search {
@@ -263,7 +184,7 @@ body {
     background: #dfa4a4;
     border-radius: 3px;
 }
-.button-container .restrict-click {
+.button-container .chonpokemon {
     color: lightgrey;
     border: 3px solid lightgray;
 }
